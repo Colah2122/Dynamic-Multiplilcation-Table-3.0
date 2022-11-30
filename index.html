@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<!--
+    File: index.html
+    Name: Chris Olah
+    Github Username: Colah2122
+    Email: christopher_olah@student.uml.edu
+    Date: 11/28/2022
+    File: index.html
+    Information: GUI Homework 4 Part 2. This assignment builds off homework 4
+        part 1. This multiplication table is created based on verified correct
+        user input. This file provides more responsiveness in which created 
+        tables can be saved via jQuery tabs as well as being deleted. Also, 
+        this assignment provides jQuery UI sliders as well. The html structure 
+        for this assignemnt is shown below in this file. 
+-->
+<html lang="en">
+ <head>
+     <meta charset="utf-8">
+     <title>Multiplication Table</title>
+     <link rel="stylesheet" href="css/index.css">
+     <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+     <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+     <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.15.0/jquery.validate.js"></script>
+ </head>
+ <body>
+     <h1>Multiplication Table</h1>
+     <form id="user_values">
+         <table id="input_user">
+             <tr>
+                 <td id="min_col_input">Minimum Column Value:</td>
+                 <td><input type="text" name="min_col" id="min_col" value="0" required></td>
+             </tr>
+             <tr>
+                 <td id="min_col_slider" colspan="2"></td>
+             </tr>
+             <tr>
+                 <td id="max_col_input">Maximum Column Value:</td>
+                 <td><input type="text" name="max_col" id="max_col" value="0" required></td>
+             </tr>
+             <tr>
+                 <td id="max_col_slider" colspan="2"></td>
+             </tr>
+             <tr>
+                 <td id="min_row_input">Minimum Row Value:</td>
+                 <td><input type="text" name="min_row" id="min_row" value="0" required></td>
+             </tr>
+             <tr>
+                 <td id="min_row_slider" colspan="2"></td>
+             </tr>
+             <tr>
+                 <td id="max_row_input">Maximum Row Value:</td>
+                 <td><input type="text" name="max_row" id="max_row" value="0" required></td>
+             </tr>
+             <tr>
+                 <td id="max_row_slider" colspan="2"></td>
+             </tr>
+             <tr>
+                 <td id="makeTable" colspan="2"><button class="submit" type="submit">"Save Table"</button></td>
+             </tr>
+         </table>
+     </form>
+     <div id="text"></div>
+     <div id="table"></div>
+     <div id="tabs_table"><ul id="tab_all"></ul></div>
+     <div id="buttons"></div>
+     <script src="js/index.js"></script>
+ </body>
+</html>

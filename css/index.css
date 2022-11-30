@@ -1,0 +1,106 @@
+/**
+    File: index.css
+    Name: Chris Olah
+    Github Username: Colah2122
+    Email: christopher_olah@student.uml.edu
+    Date: 11/28/2022
+    Information: GUI Homework 4 Part 1 CSS. This css file will provide 
+        the look and aesthetic for the html structure provided in the 
+        index.html file as well as providing css for jquery sliders and tabs. 
+
+**/
+
+/* Set styles for body */
+body {
+    text-align: center;
+    width: 75%;
+    padding-bottom: 30em;
+    margin: auto;
+    margin-top: 2%;
+    background-color:rgb(212, 231, 255);
+}
+
+/* Set styles for sliders */
+#min_col_slider, #max_col_slider, #min_row_slider, #max_row_slider {
+    margin: 0;
+}
+
+/* Set styles for table*/
+table {
+    margin: auto;
+    border-collapse: collapse;
+    border-width: thick;
+    table-layout: fixed;
+    position: relative;
+}
+
+/* Set with for inpupt text */
+input[type=text]{
+    width: 4em;
+}
+
+/* Set styles for button with font and color and size */
+button {
+    width: 50%;
+    font-weight: bold;
+    font-size: 100%;
+    background-color: blue;
+    margin-top: 5%;
+    color: white;
+}
+
+/* Set styles for tab buttons */
+#choose_tab, #delete_tab {
+    width: 190px;
+    margin-top: 10px;
+    border: solid;
+    margin-right: 20px;
+}
+
+/* Set styles for error messages */
+#table td, #table th {
+    min-width: 50px;
+}
+
+#text {
+    margin: 0;
+}
+
+/* Set styles for error messages */
+#min_col_input p, #max_col_input p, #min_row_input p, #max_row_input p, #text {
+    font-weight: bold;
+    color: red;
+    overflow: hidden;
+    margin: 0;
+}
+
+/* Set alternating colors for table for readability */
+#table tr:nth-child(odd) td:nth-child(even) {
+    background-color: lightblue;
+}
+#table tr:nth-child(even) td:nth-child(odd) {
+    background-color: white;
+}
+/* Set styles for table */
+#table {
+    font-weight: bold;
+    border-color: white;
+    padding-top: 1%;
+    margin: 0 auto;
+    overflow-x: auto;
+    overflow-y: auto;
+    max-height: 500px;
+}
+
+/* Set colors for rows */
+#row {
+    color: white;
+    background-color: blue;
+}
+
+/* Set position for table headers */
+th {
+    position: sticky;
+    top: 0;
+    left: 0;
+}
